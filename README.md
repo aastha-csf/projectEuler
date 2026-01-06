@@ -1,9 +1,37 @@
-Project Euler Solutions
+## <ins>[Project Euler Solutions](https://projecteuler.net/)</ins>
 
-This repository contains my solutions to Project Euler problems. It is used to track which problems I have completed and keep my solutions organized.
+This repository contains my solutions to Project Euler problems. It is used to track which problems I have completed and keep my solutions organized. 
+
+![Problems Solved](https://img.shields.io/badge/Problems_Solved-0/50-blue)
+![Status](https://img.shields.io/badge/Project-Active-brightgreen)
+
+#### 📁 Project Structure
+```mermaid
+graph TD
+
+    %% ====== Node Styles (Muted Colors) ======
+    classDef root fill:#d5e8ff,stroke:#8aa8c8,color:#2b3a42;
+    classDef folder fill:#e8f3e8,stroke:#9bb89b,color:#2f3b2f;
+    classDef file fill:#f5f1e6,stroke:#c7bfa6,color:#4a463b;
+
+    %% ====== Nodes ======
+    ROOT([projectEuler]):::root
+
+    ROOT --> P000{{problem_000...}}:::folder
+    P000 --> P000NB([problem_000.ipynb]):::file
+    P000 --> P000PY([problem_000.py]):::file
+
+    ROOT --> UTILS{{utils}}:::folder
+    UTILS --> HELPERS([helpers.py]):::file
+
+    ROOT --> README([README.md]):::file
+    ROOT --> LICENSE([LICENSE]):::file
+    ROOT --> GITIGNORE([.gitignore]):::file
+```
 
 | Problem | Title                        | Status      |
 | ------- | ----------------------------- | ----------- |
+| 0       | Problem 0           | Not Started |
 | 1       | Multiples of 3 or 5           | Not Started |
 | 2       | Even Fibonacci Numbers        | Not Started |
 | 3       | Largest Prime Factor          | Not Started |
